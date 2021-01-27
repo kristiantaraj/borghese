@@ -348,7 +348,6 @@ body,html {
         }
 
         .scopri-link {
-            
 
              a {
                 background-color: $color_pink;
@@ -357,10 +356,11 @@ body,html {
                 border-radius: 26px;
                 text-decoration: none;
                 font-weight: bold;
+
             }
 
             @media screen and (max-width: 1710px)  {
-                margin-bottom: 30px; 
+                padding-bottom: 30px; 
             }
         }
     }
