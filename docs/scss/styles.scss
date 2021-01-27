@@ -358,6 +358,10 @@ body,html {
                 text-decoration: none;
                 font-weight: bold;
             }
+
+            @media screen and (max-width: 1710px)  {
+                margin-bottom: 30px; 
+            }
         }
     }
 

@@ -240,3 +240,6 @@ body, html {
       border-radius: 26px;
       text-decoration: none;
       font-weight: bold; }
+    @media screen and (max-width: 1710px) {
+      #video .scopri .scopri-link {
+        margin-bottom: 30px; } }
