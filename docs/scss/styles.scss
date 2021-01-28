@@ -1,5 +1,6 @@
 $color_white: #FFFFFF;
 $color_pink: #FD3549;
+$color_pink_hover: #fd5263;
 $color_black: #000000;
 
 @font-face {
@@ -41,6 +42,7 @@ body,html {
 
 #landpage {
     height: 100%;
+    
 
     
 
@@ -118,8 +120,14 @@ body,html {
             text-decoration: none;
         }
 
+        a:hover{
+            color: $color_pink_hover;
+            text-decoration: underline;
+        }
+
         ._form_3 {
             margin: 0;
+            margin-top: 15px;
             margin-bottom: -10px;
             position: relative;
             top: -20px;
@@ -137,13 +145,13 @@ body,html {
 
         ._field-wrapper input {
             width: 26rem !important;
+            height: 3.1rem !important;
             margin-left: -45px;
             border-radius: 26px;
             padding: 13px !important;
 
             @media screen and (max-width: 672px)  {
                 max-width: 100% !important;
-                max-height: 100% !important;
                 display: flex;
                 margin-left: 0;
                 margin-right: 0;
@@ -152,18 +160,21 @@ body,html {
 
         ._submit {
             width: 7rem !important;
-            height: 3.1rem;
-            margin-left: -70px;
+            height: 3.15rem;
             border-radius: 0px 20px 20px 0px!important;
             position: absolute;
-                top: 0;
-                right: 0;
+            top: 0;
+            right: 0;
+
+            
+            &:hover {
+                background-color: $color_pink_hover !important;
+            }
 
             @media screen and (max-width: 672px)  {
                 width: 7rem !important;
-                height: 3rem;
                 position: absolute;
-                top: -68px;
+                top: -70px;
                 right: 0;
                 
             }
@@ -208,6 +219,10 @@ body,html {
             a {
                 color: $color_white;
                 text-decoration: underline;
+
+                &:hover {
+                    color: $color_pink;
+                }
             }
 
             @media screen and (max-width: 1300px)  {
@@ -301,7 +316,7 @@ body,html {
             @media screen and (max-width: 800px)  {
                 margin-top: 50%;
                 width: 90%;
-                height: 360px;
+                height: 260px;
                 margin-left: 3%;
                 margin-right: 3%;
             }
@@ -348,6 +363,7 @@ body,html {
         }
 
         .scopri-link {
+            padding-bottom: 30px; 
 
              a {
                 background-color: $color_pink;
@@ -356,7 +372,11 @@ body,html {
                 border-radius: 26px;
                 text-decoration: none;
                 font-weight: bold;
+                font-size: 18px;
+            }
 
+            a:hover{
+                background-color: $color_pink_hover;
             }
 
             @media screen and (max-width: 1710px)  {
