@@ -13,6 +13,9 @@ body, html {
     max-width: 100%;
     max-height: 100%; }
 
+.pink {
+  color: #FD3549; }
+
 .wrap {
   margin-top: -15px;
   background: url("../assets/landing.png") no-repeat top center;
