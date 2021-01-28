@@ -17,7 +17,7 @@ body, html {
   color: #FD3549; }
 
 .wrap {
-  margin-top: -15px;
+  height: 100%;
   background: url("../assets/landing.png") no-repeat top center;
   background-color: #000000; }
   @media screen and (max-width: 800px) {
@@ -28,156 +28,161 @@ body, html {
     .wrap {
       background-size: auto 55%; } }
 
-#landpage {
+@media screen and (max-width: 1280px) {
+  #landpage {
+    width: 100%; } }
+
+#landpage .landpage-content {
+  width: 100% !important;
+  height: auto !important; }
+
+#landpage .logo {
+  position: absolute;
+  top: 3%;
+  left: 3%; }
+  #landpage .logo img {
+    max-width: 80%;
+    max-height: 80%; }
+
+#landpage .subscribe {
+  padding-top: 100px;
+  width: 100%;
   height: 100%; }
-  @media screen and (max-width: 1280px) {
-    #landpage {
-      width: 100%; } }
-  #landpage .landpage-content {
-    width: 100% !important;
-    height: auto !important; }
-  #landpage .logo {
-    position: absolute;
-    top: 3%;
-    left: 3%; }
-  #landpage .subscribe {
-    padding-top: 130px;
-    width: 100%; }
-    #landpage .subscribe img {
-      max-width: 100%;
-      max-height: 100%; }
+  #landpage .subscribe img {
+    max-width: 38%; }
+  @media screen and (max-width: 1300px) {
+    #landpage .subscribe {
+      left: auto;
+      text-align: center;
+      width: auto; } }
+  #landpage .subscribe .logo-chef {
+    text-align: left; }
+  #landpage .subscribe div {
+    text-align: left !important; }
     @media screen and (max-width: 1300px) {
-      #landpage .subscribe {
-        left: auto;
-        text-align: center;
-        width: auto; } }
-    #landpage .subscribe .logo-chef {
-      text-align: left; }
-    #landpage .subscribe div {
-      text-align: left !important; }
-      @media screen and (max-width: 1300px) {
-        #landpage .subscribe div {
-          text-align: center !important; } }
-      @media screen and (max-width: 672px) {
-        #landpage .subscribe div {
-          text-align: center !important; } }
-    #landpage .subscribe h2 {
-      width: 549px;
-      color: #FFFFFF;
-      font-size: 30px; }
-      @media screen and (max-width: 1300px) {
-        #landpage .subscribe h2 {
-          width: 100%;
-          margin-top: 30px; } }
-    #landpage .subscribe p {
-      color: #FFFFFF;
-      font-size: 25px;
-      margin-top: -5px; }
-      @media screen and (max-width: 1300px) {
-        #landpage .subscribe p {
-          width: 100%; } }
-    #landpage .subscribe a {
-      color: #FD3549;
-      text-decoration: none; }
-    #landpage .subscribe a:hover {
-      color: #fd5263;
-      text-decoration: underline; }
-    #landpage .subscribe ._form_3 {
-      margin: 0;
-      margin-top: 15px;
-      margin-bottom: -10px;
-      position: relative;
-      top: -20px;
-      left: 0px; }
-    #landpage .subscribe ._form-thank-you {
-      color: #FFFFFF;
-      margin-top: 30px;
-      border: solid #FFFFFF 3px;
-      border-radius: 16px;
-      padding: 6px; }
-    #landpage .subscribe ._field-wrapper input {
-      width: 26rem !important;
-      height: 3.1rem !important;
-      margin-left: -45px;
-      border-radius: 26px;
-      padding: 13px !important; }
-      @media screen and (max-width: 672px) {
-        #landpage .subscribe ._field-wrapper input {
-          max-width: 100% !important;
-          display: flex;
-          margin-left: 0;
-          margin-right: 0; } }
-    #landpage .subscribe ._submit {
-      width: 7rem !important;
-      height: 3.17rem;
-      border-radius: 0px 20px 20px 0px !important;
-      position: absolute;
-      top: 0;
-      right: 0; }
-      #landpage .subscribe ._submit:hover {
-        background-color: #fd5263 !important; }
-      @media screen and (max-width: 672px) {
-        #landpage .subscribe ._submit {
-          width: 7rem !important;
-          position: absolute;
-          top: -70px;
-          right: 0; } }
-    #landpage .subscribe label {
-      display: none; }
-    #landpage .subscribe .privacy {
-      position: relative;
-      margin-top: -10px;
-      margin-left: -30px;
+      #landpage .subscribe div {
+        text-align: center !important; } }
+    @media screen and (max-width: 672px) {
+      #landpage .subscribe div {
+        text-align: center !important; } }
+  #landpage .subscribe h2 {
+    width: 549px;
+    color: #FFFFFF;
+    font-size: 30px; }
+    @media screen and (max-width: 1300px) {
+      #landpage .subscribe h2 {
+        width: 100%;
+        margin-top: 30px; } }
+  #landpage .subscribe p {
+    color: #FFFFFF;
+    font-size: 25px;
+    margin-top: -5px; }
+    @media screen and (max-width: 1300px) {
+      #landpage .subscribe p {
+        width: 100%; } }
+  #landpage .subscribe a {
+    color: #FD3549;
+    text-decoration: none; }
+  #landpage .subscribe a:hover {
+    color: #fd5263;
+    text-decoration: underline; }
+  #landpage .subscribe ._form_3 {
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: -10px;
+    position: relative;
+    top: -20px;
+    left: 0px; }
+  #landpage .subscribe ._form-thank-you {
+    color: #FFFFFF;
+    margin-top: 30px;
+    border: solid #FFFFFF 3px;
+    border-radius: 16px;
+    padding: 6px; }
+  #landpage .subscribe ._field-wrapper input {
+    width: 26rem !important;
+    height: 3.1rem !important;
+    margin-left: -45px;
+    border-radius: 26px;
+    padding: 13px !important; }
+    @media screen and (max-width: 672px) {
+      #landpage .subscribe ._field-wrapper input {
+        max-width: 100% !important;
+        display: flex;
+        margin-left: 0;
+        margin-right: 0; } }
+  #landpage .subscribe ._submit {
+    width: 7rem !important;
+    height: 3.17rem;
+    border-radius: 0px 20px 20px 0px !important;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #landpage .subscribe ._submit:hover {
+      background-color: #fd5263 !important; }
+    @media screen and (max-width: 672px) {
+      #landpage .subscribe ._submit {
+        width: 7rem !important;
+        position: absolute;
+        top: -70px;
+        right: 0; } }
+  #landpage .subscribe label {
+    display: none; }
+  #landpage .subscribe .privacy {
+    position: relative;
+    margin-top: -50px;
+    margin-bottom: 65px;
+    margin-left: -30px;
+    font-size: 15px;
+    text-align: center; }
+    #landpage .subscribe .privacy input {
+      z-index: 1; }
+      @media screen and (max-width: 1000px) {
+        #landpage .subscribe .privacy input {
+          width: 30px;
+          height: 30px;
+          position: relative;
+          top: 10px; } }
+    #landpage .subscribe .privacy p {
       font-size: 15px;
-      text-align: center; }
-      #landpage .subscribe .privacy input {
-        z-index: 1; }
-        @media screen and (max-width: 1000px) {
-          #landpage .subscribe .privacy input {
-            width: 30px;
-            height: 30px;
-            position: relative;
-            top: 10px; } }
-      #landpage .subscribe .privacy p {
-        font-size: 15px;
-        margin-top: -23px;
-        margin-left: 30px; }
-        @media screen and (max-width: 1000px) {
-          #landpage .subscribe .privacy p {
-            margin: 0;
-            width: 100%;
-            text-align: center; } }
-      #landpage .subscribe .privacy a {
-        color: #FFFFFF;
-        text-decoration: underline; }
-        #landpage .subscribe .privacy a:hover {
-          color: #FD3549; }
-      @media screen and (max-width: 1300px) {
-        #landpage .subscribe .privacy {
-          position: unset;
+      margin-top: -23px;
+      margin-left: 30px; }
+      @media screen and (max-width: 1000px) {
+        #landpage .subscribe .privacy p {
           margin: 0;
+          width: 100%;
           text-align: center; } }
-      @media screen and (max-width: 600px) {
-        #landpage .subscribe .privacy {
-          margin-top: -50px;
-          text-align: center; } }
-    #landpage .subscribe .description {
-      position: relative;
-      width: 1029px;
-      font-size: 20px;
-      margin-top: 25px;
-      font-style: italic; }
-      @media screen and (max-width: 1610px) {
-        #landpage .subscribe .description {
-          margin-bottom: 20%; } }
-      @media screen and (max-width: 1300px) {
-        #landpage .subscribe .description {
-          width: 100%; } }
-    #landpage .subscribe ._form-branding {
-      display: none; }
+    #landpage .subscribe .privacy a {
+      color: #FFFFFF;
+      text-decoration: underline; }
+      #landpage .subscribe .privacy a:hover {
+        color: #FD3549; }
+    @media screen and (max-width: 1300px) {
+      #landpage .subscribe .privacy {
+        position: unset;
+        margin: 0;
+        text-align: center; } }
+    @media screen and (max-width: 600px) {
+      #landpage .subscribe .privacy {
+        margin-top: -50px;
+        text-align: center; } }
+  #landpage .subscribe .description {
+    position: relative;
+    width: 1029px;
+    font-size: 20px;
+    margin-top: 25px;
+    font-style: italic; }
+    @media screen and (max-width: 1610px) {
+      #landpage .subscribe .description {
+        margin-bottom: 20%; } }
+    @media screen and (max-width: 1300px) {
+      #landpage .subscribe .description {
+        width: 100%; } }
+  #landpage .subscribe ._form-branding {
+    display: none; }
 
 #video {
-  height: auto;
+  height: 68%;
   background: url("../assets/secondpart.png") no-repeat center; }
   @media screen and (max-width: 1710px) {
     #video {
@@ -186,7 +191,7 @@ body, html {
   @media screen and (max-width: 800px) {
     #video {
       height: 100%;
-      margin-top: 45px; } }
+      margin-top: -300px; } }
   #video .youtube {
     position: absolute;
     margin-top: 20px;
