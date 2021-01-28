@@ -50,6 +50,9 @@ body, html {
   height: 100%; }
   #landpage .subscribe img {
     max-width: 38%; }
+    @media screen and (max-width: 672px) {
+      #landpage .subscribe img {
+        max-width: 58%; } }
   @media screen and (max-width: 1300px) {
     #landpage .subscribe {
       left: auto;
@@ -239,6 +242,8 @@ body, html {
         text-align: center;
         margin-left: 1rem;
         margin-right: 1rem; } }
+    #video .scopri img {
+      max-width: 50%; }
     #video .scopri .content {
       width: 598px;
       color: #FFFFFF;
