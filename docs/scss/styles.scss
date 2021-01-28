@@ -65,6 +65,12 @@ body {
             max-width: 80%;
             max-height: 80%;
         }
+
+        @media screen and (max-width: 800px)  {
+            img {
+                max-width: 60%;
+            }
+        }
     }
 
 
@@ -321,7 +327,17 @@ body {
 
             }
 
+            
+
             @media screen and (max-width: 800px)  {
+                margin-top: 20px;
+                width: 90%;
+                height: 460px;
+                margin-left: 3%;
+                margin-right: 3%;
+            }
+
+            @media screen and (max-width: 650px)  {
                 margin-top: 20px;
                 width: 90%;
                 height: 260px;
