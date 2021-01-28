@@ -25,6 +25,7 @@ body {
 
 #landpage {
   height: 100%;
+  padding-top: 20px;
   background: url("../assets/landing.png") no-repeat top center;
   padding-bottom: 2rem; }
   @media screen and (max-width: 1280px) {
@@ -83,6 +84,9 @@ body {
         #landpage .subscribe h2 {
           width: 100%;
           margin-top: 30px; } }
+      @media screen and (max-width: 600px) {
+        #landpage .subscribe h2 {
+          font-size: 20px; } }
     #landpage .subscribe p {
       color: #FFFFFF;
       font-size: 25px;
@@ -90,6 +94,11 @@ body {
       @media screen and (max-width: 1300px) {
         #landpage .subscribe p {
           width: 100%; } }
+      @media screen and (max-width: 600px) {
+        #landpage .subscribe p {
+          font-size: 18px;
+          margin-top: 10px;
+          margin-bottom: -20px; } }
     #landpage .subscribe a {
       color: #FD3549;
       text-decoration: none; }
@@ -204,7 +213,7 @@ body {
         position: unset;
         text-align: center; } }
     #video .youtube iframe {
-      width: 1000px;
+      width: 980px;
       height: 600px; }
       @media screen and (max-width: 1800px) {
         #video .youtube iframe {

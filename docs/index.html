@@ -18,7 +18,7 @@
                 <img class="logo-chef" src="assets/logoitsachef.png" alt="">
                 <h2>Ribalta la tua situazione sentimentale, prendi per la gola la tua dolce metà.</h2>
                 <p>Iscriviti per ricevere il <a href="#">codice sconto*</a>.</p>
-                <div class="_form_3"></div><script src="https://chefincamicia.activehosted.com/f/embed.php?id=3" type="text/javascript" charset="utf-8"></script>
+                <div class="row _form_3"></div><script src="https://chefincamicia.activehosted.com/f/embed.php?id=3" type="text/javascript" charset="utf-8"></script>
                 <div class="privacy">
                     <p><input type="checkbox" id="check"> Accetto le condizioni di <a href="https://www.iubenda.com/privacy-policy/39756041" target="_blank">Privacy Policy </a> e <a href="https://www.iubenda.com/termini-e-condizioni/39756041" target="_blank">Termini e Condizioni</a></p>
                 </div>
@@ -53,6 +53,11 @@
         $('#_form_3_submit').attr('disabled', 'disabled');
             }
         });
+
+
+        var submit = document.getElementById('_form_3_submit');
+
+        submit.innerHTML = '<span style="font-size: 20px; margin-right: 5px;">Invia</span> <img style="margin-top:-2px;" src="assets/plane.png">';
     </script>
 </body>
 </html>

@@ -30,6 +30,7 @@ body {
 }
 
 .wrap {
+
     @media screen and (max-width: 800px)  {
         background-size: auto 60%;
         background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(130,91,0,1) 100%);
@@ -40,6 +41,7 @@ body {
 
 #landpage {
     height: 100%;
+    padding-top: 20px;
     background: url("../assets/landing.png") no-repeat top center;
     padding-bottom: 2rem;
 
@@ -127,6 +129,10 @@ body {
                 width: 100%; 
                 margin-top: 30px;
             }
+
+            @media screen and (max-width: 600px)  {
+                font-size: 20px;
+            }
         }
 
         p {
@@ -136,6 +142,12 @@ body {
 
             @media screen and (max-width: 1300px)  {
                 width: 100%; 
+            }
+
+            @media screen and (max-width: 600px)  {
+                font-size: 18px;
+                margin-top: 10px;
+                margin-bottom: -20px;
             }
         }
 
@@ -305,7 +317,7 @@ body {
         }
 
         iframe {
-            width: 1000px;
+            width: 980px;
             height: 600px;
 
             @media screen and (max-width: 1800px)  {
