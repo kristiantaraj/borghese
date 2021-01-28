@@ -23,6 +23,7 @@
                     <p><input type="checkbox" id="check"> Accetto le condizioni di <a href="https://www.iubenda.com/privacy-policy/39756041" target="_blank">Privacy Policy </a> e <a href="https://www.iubenda.com/termini-e-condizioni/39756041" target="_blank">Termini e Condizioni</a></p>
                 </div>
                 <p class="description"><span class="pink">*</span>Iscrivendoti alla newsletter di Acadèmia riceverai un <a href="#">codice sconto</a>  per partecipare all’esclusivo corso dedicato al menù di San Valentino, tenuto dallo chef <a href="#">Alessandro Borghese </a>  Offerta valida fino alle 23:59 del 21/02/2021.</p>
+                <a href="#video"><img class="scroll" src="assets/scroll.png" alt=""></a>
             </div>
         </div>
     </section>
@@ -43,9 +44,12 @@
         </div>
     </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
     <script src="js/app.js"></script>
     <script>
+
+        
+        
         $('#check').click(function() {
         if ($(this).is(':checked')) {
         $('#_form_3_submit').removeAttr('disabled');
@@ -54,8 +58,8 @@
             }
         });
 
-
         var submit = document.getElementById('_form_3_submit');
+
 
         submit.innerHTML = '<span style="font-size: 20px; margin-right: 5px;">Invia</span> <img style="margin-top:-2px;" src="assets/plane.png">';
     </script>

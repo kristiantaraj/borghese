@@ -89,8 +89,8 @@ body {
           font-size: 20px; } }
     #landpage .subscribe p {
       color: #FFFFFF;
-      font-size: 25px;
-      margin-top: -5px; }
+      font-size: 18px;
+      margin-top: 15px; }
       @media screen and (max-width: 1300px) {
         #landpage .subscribe p {
           width: 100%; } }
@@ -197,12 +197,19 @@ body {
       @media screen and (max-width: 1300px) {
         #landpage .subscribe .description {
           width: 100%; } }
+      @media screen and (max-width: 560px) {
+        #landpage .subscribe .description {
+          font-size: 15px; } }
     #landpage .subscribe ._form-branding {
       display: none; }
 
 #video {
   height: 640px;
   background: url("../assets/secondpart.png") no-repeat center; }
+  @media screen and (max-width: 560px) {
+    #video {
+      background: url("../assets/second.png") no-repeat top center;
+      background-size: 100% auto; } }
   #video .youtube {
     position: absolute;
     margin-top: 20px;
@@ -282,3 +289,11 @@ body {
       @media screen and (max-width: 1710px) {
         #video .scopri .scopri-link {
           padding-bottom: 30px; } }
+
+.scroll {
+  display: none; }
+
+@media screen and (max-width: 560px) {
+  .scroll {
+    display: inline;
+    margin-top: -40px; } }
