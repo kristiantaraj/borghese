@@ -4,18 +4,15 @@ $color_pink_hover: #fd5263;
 $color_black: #000000;
 
 @font-face {
-    font-family: 'pageFont';
-    src: url('font/HelveticaNeueMed.ttf'); /* IE9 Compat Modes */
-    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('font/HelveticaNeueMed.ttf')  format('truetype'), /* Safari, Android, iOS */
+    font-family: "pageFont";
+    src: url("/fonts/helveticaneue-medium.woff2") format("woff2");
   }
 
 body,html {
     margin: 0;
     height: 100%;
-    font-family: pageFont;
+    font-family: "pageFont";
     background-color: $color_black;
-
 
     img {
         max-width: 100%;
@@ -23,30 +20,28 @@ body,html {
     }
 }
 
+body {
+    background-color: $color_black !important;
+    font-family: "pageFont", sans-serif;
+}
+
 .pink {
     color: $color_pink;
 }
 
 .wrap {
-    height: 100%;
-    background: url("../assets/landing.png") no-repeat top center;
-    background-color: $color_black;
-
     @media screen and (max-width: 800px)  {
         background-size: auto 60%;
         background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(130,91,0,1) 100%);
     }
-    @media screen and (max-width: 800px)  {
-        background-size: auto 55%;
-    }
+
 }
 
 
-
-
 #landpage {
-
-    
+    height: 100%;
+    background: url("../assets/landing.png") no-repeat top center;
+    padding-bottom: 2rem;
 
     
 
@@ -54,11 +49,12 @@ body,html {
         width: 100%;
     }
 
-    .landpage-content {
-        width: 100% !important;
-        height: auto!important;
-        
+    @media screen and (max-width: 560px)  {
+        width: 100%;
+        background: url("../assets/mobilelanding.png") no-repeat top center;
+        background-size: 100% auto;
     }
+
 
     .logo {
         position: absolute;
@@ -74,11 +70,18 @@ body,html {
 
     .subscribe {
         padding-top: 100px;
-        width: 100%;
         height: 100%;
 
         img {
-            max-width: 38%;
+            max-width: 30%;
+
+            @media screen and (max-width: 1750px)  {
+                max-width: 35%;
+            }
+
+            @media screen and (max-width: 1550px)  {
+                max-width: 40%;
+            }
 
 
             @media screen and (max-width: 672px)  {
@@ -87,7 +90,7 @@ body,html {
         }
 
         @media screen and (max-width: 1300px)  {
-            left: auto;   
+            margin-left: auto;  
             text-align: center;
             width: auto; 
         }
@@ -111,6 +114,7 @@ body,html {
             width: 549px;
             color: $color_white;
             font-size: 30px;
+            margin-top: 15px;
 
 
             @media screen and (max-width: 1300px)  {
@@ -278,20 +282,10 @@ body,html {
 }
 
 #video {
-    height: 68%;
+    height: 640px;
     background: url('../assets/secondpart.png') no-repeat center;
 
-    @media screen and (max-width: 1710px)  {
-        height: 100%;
-        margin-top: 45px;
-        
-    }
 
-    @media screen and (max-width: 800px)  {
-        height: 100%;
-        margin-top: -300px;
-        
-    }
 
     .youtube {
         position: absolute;
@@ -328,7 +322,6 @@ body,html {
             }
 
             @media screen and (max-width: 800px)  {
-                margin-top: 50%;
                 width: 90%;
                 height: 260px;
                 margin-left: 3%;
