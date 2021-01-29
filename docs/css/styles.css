@@ -159,6 +159,7 @@ body {
           #landpage .subscribe .privacy input {
             width: 23px;
             height: 23px;
+            margin-top: -3px;
             color:white;
             background-color:white;
             position: relative;
