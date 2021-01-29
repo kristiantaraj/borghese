@@ -157,8 +157,9 @@ body {
         z-index: 1; }
         @media screen and (max-width: 1000px) {
           #landpage .subscribe .privacy input {
-            width: 20px;
-            height: 20px;
+            width: 23px;
+            height: 23px;
+            color:white;
             background-color:white;
             position: relative;
             top: 10px; } }
