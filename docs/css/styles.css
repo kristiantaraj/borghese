@@ -154,9 +154,13 @@ body {
       font-size: 15px;
       text-align: center; }
       #landpage .subscribe .privacy input {
+        -webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
         z-index: 1; }
         @media screen and (max-width: 1000px) {
           #landpage .subscribe .privacy input {
+
             width: 19px;
             height: 19px;
             color:white;
