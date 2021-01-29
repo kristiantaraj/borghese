@@ -273,7 +273,8 @@ body {
       margin-bottom: 60px; }
       @media screen and (max-width: 1710px) {
         #video .scopri .content {
-          width: 100%; } }
+          width: auto;
+          margin: 40px 3% 60px 3%; } }
     #video .scopri .scopri-link {
       padding-bottom: 30px; }
       #video .scopri .scopri-link a {
