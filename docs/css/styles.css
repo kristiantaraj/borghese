@@ -115,6 +115,7 @@ body {
     #landpage .subscribe ._form-thank-you {
       color: #FFFFFF;
       margin-top: 30px;
+      margin-bottom: 10px;
       border: solid #FFFFFF 3px;
       border-radius: 16px;
       padding: 6px; }
@@ -122,8 +123,7 @@ body {
       width: 26rem !important;
       height: 3.1rem !important;
       margin-left: -45px;
-      border-radius: 26px;
-      padding: 13px !important; }
+      border-radius: 26px; }
       @media screen and (max-width: 672px) {
         #landpage .subscribe ._field-wrapper input {
           max-width: 100% !important;
@@ -132,7 +132,7 @@ body {
           margin-right: 0; } }
     #landpage .subscribe ._submit {
       width: 7rem !important;
-      height: 3.17rem;
+      height: 3.1rem;
       border-radius: 0px 20px 20px 0px !important;
       position: absolute;
       top: 0;
@@ -150,7 +150,6 @@ body {
     #landpage .subscribe .privacy {
       position: relative;
       margin-top: -50px;
-      margin-bottom: 65px;
       margin-left: -30px;
       font-size: 15px;
       text-align: center; }
@@ -296,4 +295,19 @@ body {
 @media screen and (max-width: 560px) {
   .scroll {
     display: inline;
-    margin-top: -40px; } }
+    margin-top: -40px;
+    width: 40px; }
+  .show {
+    display: block;
+    color: red !important;
+    margin-top: 30px;
+    margin: 5px; } }
+
+.error {
+  display: none; }
+
+.show {
+  display: block;
+  color: red !important;
+  margin-top: 10px;
+  margin: 5px; }
