@@ -80,6 +80,21 @@ body {
         padding-top: 100px;
         height: 100%;
 
+        .p-width {
+            width: 40%;
+            margin-top: -10px;
+            margin-bottom: 40px;
+
+            @media screen and (max-width: 1300px)  {
+                width: 100%; 
+                margin-top: -6px;
+            }
+
+            @media screen and (max-width: 600px)  {
+                font-size: 18px;
+            }
+        }
+
         img {
             max-width: 30%;
 
@@ -118,6 +133,26 @@ body {
             }
         }
 
+        .scopri-link {
+
+             a {
+                background-color: $color_pink;
+                color: $color_white;
+                padding: 10px 30px 10px 30px;
+                border-radius: 26px;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            a:hover{
+                background-color: $color_pink_hover;
+                color: $color_white;
+                text-decoration: none;
+            }
+
+        }
+
         h2 {
             width: 549px;
             color: $color_white;
@@ -133,6 +168,11 @@ body {
             @media screen and (max-width: 600px)  {
                 font-size: 20px;
             }
+        }
+
+        h4 {
+            color: $color_white;
+            margin-top: 30px;
         }
 
         p {
@@ -161,118 +201,7 @@ body {
             text-decoration: underline;
         }
 
-        ._form_3 {
-            margin: 0;
-            margin-top: 15px;
-            margin-bottom: -10px;
-            position: relative;
-            top: -20px;
-            left: 0px;
-        }
-
-
-        ._form-thank-you {
-            color: $color_white;
-            margin-top: 30px;
-            margin-bottom: 10px;
-            border: solid $color_white 3px;
-            border-radius: 16px;
-            padding: 6px;
-        }
-
-        ._field-wrapper input {
-            width: 26rem !important;
-            height: 3.1rem !important;
-            margin-left: -45px;
-            border-radius: 26px;
-
-            @media screen and (max-width: 672px)  {
-                max-width: 100% !important;
-                display: flex;
-                margin-left: 0;
-                margin-right: 0;
-            }
-        }
-
-        ._submit {
-            width: 7rem !important;
-            height: 3.1rem;
-            border-radius: 0px 20px 20px 0px!important;
-            position: absolute;
-            top: 0;
-            right: 0;
-
-            
-            &:hover {
-                background-color: $color_pink_hover !important;
-            }
-
-            @media screen and (max-width: 672px)  {
-                width: 7rem !important;
-                position: absolute;
-                top: -70px;
-                right: 0;
-                
-            }
-        }
-
-        label {
-            display: none;
-        }
-
-        .privacy {
-            position: relative;
-            margin-top: -50px;
-            margin-left: -30px;
-            font-size: 15px;
-            text-align: center;
-
-            input {
-                z-index: 1;
-
-                @media screen and (max-width: 1000px)  {
-                    width: 20px;
-                    height: 20px;
-                    position: relative;
-                    top: -3px;
-                }
-            }
-
-            p {
-                font-size: 15px;
-                margin-top: -23px;
-                margin-left: 30px;
-
-                @media screen and (max-width: 1000px)  {
-                    margin: 0;
-                    margin-top: 10px;
-                    width: 100%;
-                    text-align: center;
-                }
-            }
-
-            
-
-            a {
-                color: $color_white;
-                text-decoration: underline;
-
-                &:hover {
-                    color: $color_pink;
-                }
-            }
-
-            @media screen and (max-width: 1300px)  {
-                position: unset;
-                margin: 0;
-                text-align: center;
-            }
-            @media screen and (max-width: 600px)  {
-                margin-top: -50px;
-                text-align: center;
-            }
-        }
-
+        
         .description {
             position: relative;
             width: 1029px;
@@ -298,9 +227,7 @@ body {
             
         }
 
-        ._form-branding {
-            display: none;
-        }
+
     }
 }
 
@@ -379,7 +306,6 @@ body {
         right: 6%;
         margin-top: 8rem;
         text-align: center;
-        margin-bottom: 4rem;
 
         @media screen and (max-width: 1710px)  {
             margin-top: 4rem;
@@ -395,6 +321,121 @@ body {
         }
 
 
+        ._form_3 {
+            margin: 0;
+            margin-top: 15px;
+            margin-bottom: -10px;
+            position: relative;
+            top: -20px;
+            left: 0px;
+        }
+
+
+        ._form-thank-you {
+            color: $color_white;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border: solid $color_white 3px;
+            border-radius: 16px;
+            padding: 6px;
+        }
+
+        ._field-wrapper input {
+            width: 26rem !important;
+            height: 3.1rem !important;
+            margin-left: -45px;
+            border-radius: 26px;
+
+            @media screen and (max-width: 672px)  {
+                width: 100% !important;
+                display: flex;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
+        ._submit {
+            width: 7rem !important;
+            height: 3.1rem;
+            border-radius: 0px 20px 20px 0px!important;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            
+            &:hover {
+                background-color: $color_pink_hover !important;
+            }
+
+            @media screen and (max-width: 672px)  {
+                width: 7rem !important;
+                position: absolute;
+                top: -70px;
+                right: 0px;
+            }
+        }
+
+        label {
+            display: none;
+        }
+
+        .privacy {
+            position: relative;
+            margin-top: -50px;
+            margin-left: -30px;
+            font-size: 15px;
+            text-align: center;
+
+            input {
+                z-index: 1;
+
+                @media screen and (max-width: 1000px)  {
+                    width: 20px;
+                    height: 20px;
+                    position: relative;
+                    top: -3px;
+                }
+            }
+
+            p {
+                font-size: 15px;
+                color: $color_white;
+                margin-top: -23px;
+                margin-left: 30px;
+
+                @media screen and (max-width: 1000px)  {
+                    margin: 0;
+                    margin-top: 10px;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+
+
+            a {
+                color: $color_white;
+                text-decoration: underline;
+
+                &:hover {
+                    color: $color_pink;
+                }
+            }
+
+            @media screen and (max-width: 1300px)  {
+                position: unset;
+                margin-bottom: 20px;;
+                text-align: center;
+            }
+            @media screen and (max-width: 600px)  {
+                margin-top: -50px;
+                text-align: center;
+            }
+        }
+
+        ._form-branding {
+            display: none;
+        }
 
 
         
@@ -414,27 +455,7 @@ body {
 
         }
 
-        .scopri-link {
-            padding-bottom: 30px; 
-
-             a {
-                background-color: $color_pink;
-                color: $color_white;
-                padding: 15px;
-                border-radius: 26px;
-                text-decoration: none;
-                font-weight: bold;
-                font-size: 18px;
-            }
-
-            a:hover{
-                background-color: $color_pink_hover;
-            }
-
-            @media screen and (max-width: 1710px)  {
-                padding-bottom: 30px; 
-            }
-        }
+        
     }
 
 
@@ -472,12 +493,17 @@ body {
 
 .error {
     display: none;
-    
 }
 
 .show {
     display: block;
     color: red !important;
-    margin-top: 10px;
-    margin: 5px;
+    margin: -10px 0 0 0 !important;
+}
+
+
+.newsletter-sub {
+    margin-bottom: -60px;
+    padding-top: 20px;
+    color: $color_white;
 }
