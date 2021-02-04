@@ -254,7 +254,7 @@ body {
     #video .scopri .privacy {
       position: relative;
       margin-top: -50px;
-      margin-left: -30px;
+      margin-left: -70px;
       font-size: 15px;
       text-align: center; }
       #video .scopri .privacy input {
@@ -289,7 +289,8 @@ body {
       @media screen and (max-width: 600px) {
         #video .scopri .privacy {
           margin-top: -50px;
-          text-align: center; } }
+          text-align: center;
+          margin-left: 0px; } }
     #video .scopri ._form-branding {
       display: none; }
     #video .scopri .content {
