@@ -24,7 +24,7 @@ body {
     background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, #825b00 100%); } }
 
 #landpage {
-  height: 100%;
+  height: 120%;
   padding-top: 20px;
   background: url("../assets/landing.png?ver=1.3") no-repeat top center;
   padding-bottom: 2rem; }
@@ -61,6 +61,7 @@ body {
         #landpage .subscribe .p-width {
           font-size: 18px; } }
     #landpage .subscribe img {
+      margin-top: 100px;
       max-width: 30%; }
       @media screen and (max-width: 1750px) {
         #landpage .subscribe img {
@@ -70,7 +71,7 @@ body {
           max-width: 40%; } }
       @media screen and (max-width: 672px) {
         #landpage .subscribe img {
-          max-width: 58%; } }
+          max-width: 80%; } }
     @media screen and (max-width: 1300px) {
       #landpage .subscribe {
         margin-left: auto;
@@ -98,17 +99,17 @@ body {
       background-color: #fd5263;
       color: #FFFFFF;
       text-decoration: none; }
-    #landpage .subscribe h2 {
-      width: 549px;
+    #landpage .subscribe h4 {
+      width: 709px;
       color: #FFFFFF;
-      font-size: 30px;
+      font-size: 25px;
       margin-top: 15px; }
       @media screen and (max-width: 1300px) {
-        #landpage .subscribe h2 {
+        #landpage .subscribe h4 {
           width: 100%;
           margin-top: 30px; } }
       @media screen and (max-width: 600px) {
-        #landpage .subscribe h2 {
+        #landpage .subscribe h4 {
           font-size: 20px; } }
     #landpage .subscribe h4 {
       color: #FFFFFF;
@@ -134,7 +135,7 @@ body {
     #landpage .subscribe .description {
       position: relative;
       width: 1029px;
-      font-size: 20px;
+      font-size: 18px;
       margin-top: 25px;
       font-style: italic; }
       @media screen and (max-width: 1610px) {
@@ -145,7 +146,10 @@ body {
           width: 100%; } }
       @media screen and (max-width: 560px) {
         #landpage .subscribe .description {
-          font-size: 15px; } }
+          font-size: 12px;
+          margin-top: 40px;
+          margin-bottom: -50px;
+          } }
 
 #video {
   height: 640px;
